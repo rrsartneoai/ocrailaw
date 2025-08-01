@@ -13,15 +13,11 @@ import CodeGenerator from "@/components/CodeGenerator";
 import StatsSection from "@/components/StatsSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import AIHeroSection from "@/components/AIHeroSection";
-import RAGArchitecture from "@/components/RAGArchitecture";
 import ModulesSection from "@/components/ModulesSection";
 import SecuritySection from "@/components/SecuritySection";
-import ImplementationTimeline from "@/components/ImplementationTimeline";
-import TimeCalculator from "@/components/TimeCalculator";
 import EnhancedChatBubble from "@/components/EnhancedChatBubble";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import DynamicBanner from "@/components/DynamicBanner";
-import SnippetGenerator from "@/components/SnippetGenerator";
 import GlassCard from "@/components/GlassCard";
 
 const Index = () => {
@@ -39,58 +35,13 @@ const Index = () => {
         
         <StatsSection />
         <FeaturesSection />
-        <APIShowcase />
-        <CodeGenerator />
-        
-        {/* Snippet Generator Section */}
-        <SnippetGenerator />
+        {/* <APIShowcase />
+        <CodeGenerator /> */}
         
         {/* New AI Assistant Sections */}
         <AIHeroSection />
-        <RAGArchitecture />
         <ModulesSection />
-        <TimeCalculator />
         <SecuritySection />
-        <ImplementationTimeline />
-        
-        {/* Enhanced PrawoAsystent CTA Section with Glassmorphism */}
-        <section className="py-20 relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/50 to-blue-900/50"></div>
-          <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <GlassCard className="p-8" hoverable intensity="high">
-              <div className="flex justify-center mb-6">
-                <div className="p-4 bg-gradient-to-r from-purple-500 to-blue-500 rounded-2xl shadow-2xl animate-pulse">
-                  <Shield className="h-12 w-12 text-white" />
-                </div>
-              </div>
-              <h2 className="text-3xl font-bold text-white mb-4">
-                Gotowy do uruchomienia PrawoAsystent AI?
-              </h2>
-              <p className="text-xl text-gray-200 mb-8">
-                Przetestuj wszystkie funkcje naszego zaawansowanego systemu AI dla kancelarii prawnych
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/prawo-asystent">
-                  <Button 
-                    size="lg" 
-                    className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white font-semibold px-8 py-4 text-lg hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
-                  >
-                    Uruchom PrawoAsystent AI
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
-                </Link>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="border-2 border-white/30 text-white hover:bg-white/10 px-8 py-4 text-lg backdrop-blur-sm hover:scale-105 transition-all duration-300"
-                >
-                  <Bot className="mr-2 h-5 w-5" />
-                  Zobacz demo
-                </Button>
-              </div>
-            </GlassCard>
-          </div>
-        </section>
         
         {/* Enhanced Chat Bubble with RAG */}
         <EnhancedChatBubble />
